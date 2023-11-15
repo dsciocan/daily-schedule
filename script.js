@@ -8,7 +8,7 @@ timeBlock.addClass("time-block")
 
 // Present timeblocks for standard business hours when the user scrolls down.
 for(i=0; i<times.length; i++) {
-    var row = $('<div>').addClass('row g-0 input-group').data("index", times[i]);
+    var row = $('<div>').addClass('row g-0 input-group');
     var timeDiv = $('<div>').addClass('input-group-prepend col-md-1 hour');
     var timeSlot = $('<label>').text(times[i] + ":00");
     timeDiv.append(timeSlot);
@@ -54,3 +54,4 @@ function currentTime() {
     inputField.prop('readonly', true);
 }
 }
+
